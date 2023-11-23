@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+    font-size: 16px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.main-container{
+    background-color: white;
+    display: flex;
+    width: 60%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.left-container{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: hsl(234, 29%, 20%);
+}
+.p{
+    padding-right: 15px;
+    margin-bottom: 15px;
+    color: hsl(234, 29%, 20%);
+}
+.pros{
+    display: flex;
+    margin-bottom: 10px;
+    color: hsl(234, 29%, 20%);
+}
+.pros img{
+    margin-right: 10px;
+}
+.form-control{
+    position: relative;
+    margin-bottom: 25px;
+}
+.form-control small{
+    position: absolute;
+    right: 80px;
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+.email{
+    display: block;
+    width: 80%;
+    height: 35px;
+    padding-left: 8px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.right-container{
+    display: flex;
+    width: 40%;
+}
+.sub{
+    background-color:hsl(235, 18%, 26%);
+    width: 83%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.act{
+    visibility: visible;
+}
+.dsc{
+    visibility: hidden;
+    display: none;
+}
+.email:hover{
+    cursor: pointer;
+}
+.sub:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(253,47,29,1), rgba(252,176,69,1));
+    border: none;
+}
+.second-container{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 30px;
+}
+.second-container .h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.second-container p{
+    margin-bottom: 30px;
+}
+.second-container p a{
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+.second-container button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border-radius: 10px;
+}
+.second-container button:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,107,50,1) 91%);
+}
+.form-control.error .email{
+    border: solid hsl(4, 100%, 67%);
+}
+.form-control.error .email::placeholder{
+    color: hsl(4, 100%, 67%);
+}
+.form-control.error small{
+    color: hsl(4, 100%, 67%);
+    visibility: visible;
+}
+.form-control.success{
+    visibility: hidden;
+}
